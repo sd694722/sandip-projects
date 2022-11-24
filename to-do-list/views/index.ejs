@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>To Do List</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- -------------------------------------------------------------------- -->
+        <div class="list-head">
+            <h1>To Do List</h1>
+        </div>
+        <form action="/about" method="get">
+            <button class="btn" type="submit"><i class="material-icons">compare</i></button>
+        </form>
+        <!-- -------------------------------------------------------------------- -->
+        <form class="item" action="/" method="post">
+            <input type="text" name="newItem" autocomplete="off">
+            <button type="submit">+</button>
+        </form>
+        <!-- -------------------------------------------------------------------- -->
+
+        <% newListItems.forEach((item)=>{ %>
+        <form action="/delete" method="post">
+            <div class="list">
+                <input type="checkbox" name="checkbox" value="<%= item.id %>" onChange="this.form.submit()">
+                <p><%= item.name %></p>
+            </div>
+            <% }) %>
+        </form> 
+    </div>
+
+    </div>
+</body>
+
+</html>

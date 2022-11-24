@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+html {
+    background: linear-gradient(90deg, #ffb0c1, #b0c9ff);
+    min-height: 100vh;
+}
+
+html:hover {
+    background: linear-gradient(90deg, #ff90a6, #9fbdfe);
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    box-shadow: 10px 30px 50px -10px rgb(0 0 0 / 25%);
+    padding-bottom: 20px;
+}
+
+.container:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 10px 30px 50px -10px rgb(0 0 0 / 40%);
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 42px;
+    padding: 10px;
+    color: black;
+    font-family: Segoe UI;
+}
+
+h1:hover {
+    font-size: 43px;
+}
+
+li {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+p {
+    font-size: 17px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+}
+
+p:hover {
+    font-size: 17.5px;
+}
+
+form .btn {
+    height: 25px;
+    width: 25px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}

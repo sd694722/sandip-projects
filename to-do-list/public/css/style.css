@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+html {
+    background: linear-gradient(90deg, #ffb0c1, #b0c9ff);
+    min-height: 100vh;
+}
+
+html:hover {
+    background: linear-gradient(90deg, #ff90a6, #9fbdfe);
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    box-shadow: 10px 30px 50px -10px rgb(0 0 0 / 25%);
+    padding-bottom: 20px;
+}
+
+.container:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 10px 30px 50px -10px rgb(0 0 0 / 40%);
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 42px;
+    padding: 10px;
+    color: black;
+    font-family: Segoe UI;
+}
+
+h1:hover {
+    font-size: 43px;
+    padding: 10px;
+    color: black;
+    font-family: Segoe UI;
+}
+
+.container .item {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+
+.container .item input[type=text] {
+    font-size: 16px;
+    border: none;
+    width: 350px;
+    height: 32px;
+    margin-right: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    box-shadow: 5px 10px 25px -10px rgb(0 0 0 / 40%);
+    padding: 4px 10px;
+    resize: none;
+    outline: none;
+}
+
+.container .item input[type=text]:hover {
+    border: none;
+    width: 350px;
+    height: 32px;
+    margin-right: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    box-shadow: 5px 10px 25px -10px rgb(0 0 0 / 40%);
+    padding: 4px 10px;
+    resize: none;
+    outline: none;
+}
+
+.container .item button {
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    box-shadow: 5px 10px 20px -5px rgb(0 0 0 / 30%);
+}
+
+.container .item button:hover {
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    box-shadow: 5px 10px 20px -5px rgb(0 0 0 / 40%);
+}
+.container .list{
+    display: flex;
+    min-height: 70px;
+    width: 396px;
+    justify-content: start;
+    align-items: center;
+}
+
+p{
+    margin-left: 10px;
+    font-size: 20px;
+}
+input[type=checkbox]{
+    height: 20px;
+    width: 20px;
+}
+
+input:checked+p{
+    text-decoration: line-through;
+    text-decoration-color: black;
+}
+
+
+
+.container .about-data{
+    align-items: center; 
+}
+@media only screen and (max-width: 768px) {
+    [class*="container"] {
+        width: 100%;
+    }
+}
+form .btn{
+    height: 25px;
+    width: 25px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
